@@ -18,8 +18,8 @@ f = 25
 
 st.title('Ricker wavelet') 
 #st.button('Hit me')
-st.subheader("f(x) = A*sin(B(x+C)) + D")
-f = st.slider('Select a value of A from [1, 240]', value=60., min_value=1., max_value=240.)
+st.subheader("f(t) = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))")
+f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
 st.write("Frequency = ", f)
 t, y = ricker (f)
 
