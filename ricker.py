@@ -23,11 +23,6 @@ f = st.slider('Select a value of A from [1, 240]', value=60., min_value=1., max_
 st.write("Frequency = ", f)
 t, y = ricker (f)
 
-
-x = np.arange(0, 4*np.pi, 0.1)
-sinx = a * np.sin(b*(x+c)) + d
-cosx = np.cos(x)
-
 chart_data = pd.DataFrame(
    {
        "t": t,
