@@ -13,9 +13,10 @@ def ricker(f, length=0.512, dt=0.001):
     y = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))
     return t, y
 
-fig, ax = plt.subplots()
-
+#fig, ax = plt.subplots()
 f = 25
+
+t, y = ricker (f)
 
 st.title('Ricker wavelet')
 #st.button('Hit me')
@@ -38,10 +39,9 @@ cosx = np.cos(x)
 
 chart_data = pd.DataFrame(
    {
-       "x": x,
-       "sin": sinx,
-       "cos": cosx
+       "t": t,
+       "y": y
    }
 )
 
-st.line_chart(chart_data, x="x", y=["sin","cos"] )
+st.line_chart(chart_data, x="t", y="y")
