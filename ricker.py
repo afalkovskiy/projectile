@@ -9,7 +9,7 @@ import math
 pi = math.pi
 
 def ricker(f, length=0.512, dt=0.001):
-    t = np.linspace(-length/2, (length-dt)/2, length/dt)
+    t = np.linspace(-length/2, (length-dt)/2, int(length/dt))
     y = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))
     return t, y
 
