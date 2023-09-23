@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title('Plot sin(x)')
+st.title('Ricker wavelet')
 #st.button('Hit me')
 st.subheader("f(x) = A*sin(B(x+C)) + D")
 a = st.slider('Select a value of A from [-10, 10]', value=1., min_value=-10., max_value=10.)
