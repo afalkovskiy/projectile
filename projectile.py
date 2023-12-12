@@ -6,16 +6,14 @@ import numpy as np
 import math
 st.set_page_config(layout="wide")
 padding_top = 0
-st.markdown("""
+st.markdown(f"""
     <style>
-            .reportview-container .main .block-container{{
+        .reportview-container .main .block-container{{
             padding-top: {padding_top}rem;
         }}
-    # [data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
-    #     gap: 0rem;
-    }
-    </style>
-    """,unsafe_allow_html=True)
+    </style>""",
+    unsafe_allow_html=True,
+)
 
 
 pi = math.pi
