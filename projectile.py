@@ -36,7 +36,7 @@ def projectile(v, alpha, dt=0.01):
 
 #fig, ax = plt.subplots()
 
-st.subheader('Projectile Motion') 
+st.header('Projectile Motion') 
 #st.button('Hit me')
 
 col1, col2 = st.columns(2)
