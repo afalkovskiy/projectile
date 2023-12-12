@@ -39,19 +39,28 @@ def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
 #fig, ax = plt.subplots()
 f = 25
 
-st.title('Projectile1') 
+st.title('Projectile') 
 #st.button('Hit me')
 st.subheader("f(t) = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))")
 f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
 st.write("Frequency = ", f)
-t, y = ricker (f)
-f1 = 5
-f2 = 10
-f3 = f
-f4 = f+20.
-t, y = ORMSBY(f1, f2, f3, f4, 0.512, 0.001)
 
-t, y = projectile(20, pi/6.)
+v = st.slider('Velocity (m/s)', value=120., min_value=1., max_value=1200.)
+st.write("Velocity = ", v)
+
+alpha = st.slider('Inclination to the horizontal (deg)', value=30., min_value=0., max_value=90.)
+alpha_rad = pi * alpha / 180.
+st.write("alpha_rad = ", alpha_rad)
+
+
+# t, y = ricker (f)
+# f1 = 5
+# f2 = 10
+# f3 = f
+# f4 = f+20.
+# t, y = ORMSBY(f1, f2, f3, f4, 0.512, 0.001)
+
+t, y = projectile(v, alpha_rad)
 
 chart_data = pd.DataFrame(
    {
