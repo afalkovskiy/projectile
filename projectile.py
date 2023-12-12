@@ -9,7 +9,7 @@ pi = math.pi
 
 def projectile(v, alpha, dt=0.01):
     t2 = 2 * vy / g
-    t = np.linspace(0, t2., int(t2/dt))
+    t = np.linspace(0, t2, int(t2/dt))
     vx = v * math.cos(alpha)
     vy = v * math.sin(alpha)
     g = 9.81
