@@ -8,10 +8,10 @@ import math
 pi = math.pi
 
 def projectile(v, alpha, dt=0.01):
-    t2 = 2 * vy / g
-    t = np.linspace(0, t2, int(t2/dt))
     vx = v * math.cos(alpha)
     vy = v * math.sin(alpha)
+    t2 = 2 * vy / g
+    t = np.linspace(0, t2, int(t2/dt))
     g = 9.81
     x = vx * t
     y = vy * t - 0.5 * g * np.square(t)
