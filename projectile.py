@@ -44,14 +44,14 @@ st.subheader(txt0)
 txt1 = "t = " + str(round(t2,1)) + " s;  d = " + str(round(d,1)) + " m;  h = " + str(round(h,1)) +" m"
 st.subheader(txt1)
 
-
+fig, ax = plt.subplots()
+ax.plot(x,y)
+plt.xlabel("distance (m)")
+plt.ylabel("height (m)")
+st.pyplot(fig)
 
 
 chart_data = pd.DataFrame(
-   {
-       "x(m)": x,
-       "y": y
-   }
+   { "x(m)": x, "y": y}
 )
-
 st.line_chart(chart_data, x="x(m)", y="y")
