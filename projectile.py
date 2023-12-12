@@ -28,7 +28,7 @@ def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
 #fig, ax = plt.subplots()
 f = 25
 
-st.title('Ricker wavelet') 
+st.title('Projectile') 
 #st.button('Hit me')
 st.subheader("f(t) = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))")
 f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
