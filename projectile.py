@@ -11,8 +11,8 @@ st.markdown("""
             .reportview-container .main .block-container{{
             padding-top: {padding_top}rem;
         }}
-    [data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
-        gap: 0rem;
+    # [data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
+    #     gap: 0rem;
     }
     </style>
     """,unsafe_allow_html=True)
