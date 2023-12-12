@@ -7,6 +7,16 @@ import math
 
 pi = math.pi
 
+def projectile(v, alpha, dt=0.01):
+    t = np.linspace(0, 10., int(10/dt))
+    vx = v * math.cos(alpha)
+    vy = v * math.sin(alpha)
+    g = 9.81
+    x = vx * t
+    y = vy * t - 0.5 * g * np.square(t)
+    return x, y
+    
+
 def ricker(f, length=0.512, dt=0.001):
     t = np.linspace(-length/2, (length-dt)/2, int(length/dt))
     y = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))
@@ -39,6 +49,8 @@ f2 = 10
 f3 = f
 f4 = f+20.
 t, y = ORMSBY(f1, f2, f3, f4, 0.512, 0.001)
+
+t, y = projectile(20, pi/6.)
 
 chart_data = pd.DataFrame(
    {
