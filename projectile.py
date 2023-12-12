@@ -61,7 +61,7 @@ ax = plt.gca()
 xmin = 0.
 ymin = 0.
 xmax = round(d/500.,0) * 500.
-ymax = xmac
+ymax = xmax
 ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
 
