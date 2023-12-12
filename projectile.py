@@ -35,7 +35,7 @@ st.write("alpha_rad = ", alpha_rad)
 
 st.subheader("Vx = V * Cos(alpha) = ")
 
-t, y = projectile(v, alpha_rad)
+x, y = projectile(v, alpha_rad)
 
 chart_data = pd.DataFrame(
    {
