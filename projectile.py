@@ -4,9 +4,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 #from scipy.signal import hilbert, chirp
 import math
-
+st.set_page_config(layout="wide")
+padding_top = 0
 st.markdown("""
     <style>
+            .reportview-container .main .block-container{{
+            padding-top: {padding_top}rem;
+        }}
     [data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
         gap: 0rem;
     }
