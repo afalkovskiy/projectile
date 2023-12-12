@@ -60,7 +60,7 @@ fig, ax = plt.subplots()
 ax = plt.gca()
 xmin = 0.
 ymin = 0.
-xmax = max(round(d/500.,0) + 500., round(h/500.,0) + 500.)
+xmax = max(round(d/500.,0) * 500. + 500., round(h/500.,0) * 500. + 500.)
 ymax = xmax
 ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
