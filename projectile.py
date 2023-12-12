@@ -50,7 +50,7 @@ with col2:
 
 
 x, y, t2, d, h = projectile(v, alpha_rad)
-txt0 = "vel = " + str(round(v,1)) + " m/s;  angle = " + str(round(alpha,1)) + " deg"
+txt0 = "V0 = " + str(round(v,1)) + " m/s;  θ = " + str(round(alpha,1)) + " deg"
 st.subheader(txt0)
 txt1 = "t = " + str(round(t2,1)) + " s;  d = " + str(round(d,1)) + " m;  h = " + str(round(h,1)) +" m"
 st.subheader(txt1)
@@ -76,15 +76,6 @@ st.latex(r'''
 v_x = v \cdot cos( \theta ); v_y = v \cdot sin( \theta ); t_1 = \frac{v_y} {g}; t_2 = 2 t_1; d = v_x t_2 ; 
 h = v_y t_1 - 0.5 g t_1^2
 ''') 
-
-st.latex(r'''
-Ricker(t) = (1-2\pi^2 f^2 t^2)e^{-\pi^2 f^2 t^2}
-''') 
-st.latex(r'''
-    Ormsby(t) = \frac{\pi f_4^2 sinc^2 (\pi f_4 t) - \pi f_3^2 sinc^2 (\pi f_3 t)}{f_4 - f_3}  
-    - \frac{\pi f_2^2 sinc^2 (\pi f_2 t) - \pi f_1^2 sinc^2 (\pi f_1 t)}{f_2 - f_1}
-    ''') 
-
 
 # chart_data = pd.DataFrame(
 #    { "x(m)": x, "y": y}
