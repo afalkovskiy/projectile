@@ -31,15 +31,15 @@ st.title('Projectile')
 col1, col2 = st.columns(2)
 with col1:
     v = st.slider('Velocity (m/s)', value=120., min_value=1., max_value=1500.)
-    st.write("Velocity = ", v)
+    # st.write("Velocity = ", v)
 with col2:
     alpha = st.slider('Inclination to the horizontal (deg)', value=30., min_value=0., max_value=90.)
     alpha_rad = pi * alpha / 180.
-    st.write("alpha_rad = ", alpha_rad)
+    # st.write("alpha_rad = ", alpha_rad)
 
 
 x, y, t2, d, h = projectile(v, alpha_rad)
-txt0 = "v = " + str(round(v,1)) + " m/s;  angle = " + str(round(alpha,1)) + " deg"
+txt0 = "vel = " + str(round(v,1)) + " m/s;  angle = " + str(round(alpha,1)) + " deg"
 st.subheader(txt0)
 txt1 = "t = " + str(round(t2,1)) + " s;  d = " + str(round(d,1)) + " m;  h = " + str(round(h,1)) +" m"
 st.subheader(txt1)
