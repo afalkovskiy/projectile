@@ -73,7 +73,8 @@ plt.grid(True)
 st.pyplot(fig)
 
 st.latex(r'''
-v_x = v \cdot cos( \theta ); v_y = v \cdot sin( \theta ); t = \frac{2 v_y} {g}; d = v_x t ;
+v_x = v \cdot cos( \theta ); v_y = v \cdot sin( \theta ); t_1 = \frac{v_y} {g}; t_2 = 2 t_1; d = v_x t ; 
+h = v_y t
 ''') 
 
 st.latex(r'''
