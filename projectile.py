@@ -40,7 +40,7 @@ with col2:
 
 x, y, t2, d, h = projectile(v, alpha_rad)
 txt0 = "v = " + str(round(v,1)) + " m/s;  angle = " + str(round(alpha,1)) + " deg"
-st.subheader(txt1)
+st.subheader(txt0)
 txt1 = "t = " + str(round(t2,1)) + " s;  d = " + str(round(d,1)) + " m;  h = " + str(round(h,1)) +" m"
 st.subheader(txt1)
 
