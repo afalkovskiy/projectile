@@ -56,6 +56,16 @@ txt1 = "t = " + str(round(t2,1)) + " s;  d = " + str(round(d,1)) + " m;  h = " +
 st.subheader(txt1)
 
 fig, ax = plt.subplots()
+
+ax = plt.gca()
+xmin = 0.
+ymin = 0.
+xmax = d
+ymax = d
+ax.set_xlim([xmin, xmax])
+ax.set_ylim([ymin, ymax])
+
+
 ax.plot(x,y)
 plt.xlabel("X (m)")
 plt.ylabel("Y (m)")
