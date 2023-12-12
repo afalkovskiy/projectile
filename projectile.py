@@ -49,9 +49,9 @@ st.subheader(txt1)
 
 chart_data = pd.DataFrame(
    {
-       "x": x,
+       "x (m)": x,
        "y": y
    }
 )
 
-st.line_chart(chart_data, x="x", y="y")
+st.line_chart(chart_data, x="x(m)", y="y")
