@@ -12,11 +12,15 @@ def projectile(v, alpha, dt=0.01):
     vx = v * math.cos(alpha)
     vy = v * math.sin(alpha)
     g = 9.81
+    t1 = vy/g
+    t2 = 2*t1
+    d = vx*t2
+    h = vy*t1 - 0.5*g*t1**2
     t2 = 2 * vy / g
     t = np.linspace(0, t2, int(t2/dt))
     x = vx * t
     y = vy * t - 0.5 * g * np.square(t)
-    return x, y
+    return x, y, t2, d, h
     
 
 #fig, ax = plt.subplots()
@@ -33,15 +37,10 @@ with col2:
     alpha_rad = pi * alpha / 180.
     st.write("alpha_rad = ", alpha_rad)
 
-t1 = vy/g
-t2 = 2*vv
-d = vx*t2
-h = vy*t1 - 0.5*g*t1**2
+
+x, y, t2, d, h = projectile(v, alpha_rad)
 txt1 = "Time = " + str(round(t2,1))
 st.subheader(txt1)
-
-x, y = projectile(v, alpha_rad)
-
 
 
 
