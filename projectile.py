@@ -6,6 +6,7 @@ import numpy as np
 import math
 
 pi = math.pi
+g = 9.81
 
 def projectile(v, alpha, dt=0.01):
     vx = v * math.cos(alpha)
