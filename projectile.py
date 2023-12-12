@@ -25,7 +25,7 @@ def projectile(v, alpha, dt=0.01):
 
 #fig, ax = plt.subplots()
 
-st.title('Projectile') 
+st.title('Projectile Motion') 
 #st.button('Hit me')
 
 col1, col2 = st.columns(2)
@@ -46,8 +46,8 @@ st.subheader(txt1)
 
 fig, ax = plt.subplots()
 ax.plot(x,y)
-plt.xlabel("distance (m)")
-plt.ylabel("height (m)")
+plt.xlabel("X (m)")
+plt.ylabel("Y (m)")
 st.pyplot(fig)
 
 
