@@ -30,7 +30,7 @@ st.title('Projectile')
 
 col1, col2 = st.columns(2)
 with col1:
-    v = st.slider('Velocity (m/s)', value=120., min_value=1., max_value=1200.)
+    v = st.slider('Velocity (m/s)', value=120., min_value=1., max_value=1500.)
     st.write("Velocity = ", v)
 with col2:
     alpha = st.slider('Inclination to the horizontal (deg)', value=30., min_value=0., max_value=90.)
