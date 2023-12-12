@@ -39,7 +39,7 @@ t, y = projectile(v, alpha_rad)
 
 chart_data = pd.DataFrame(
    {
-       "t": t,
+       "x": t,
        "y": y
    }
 )
