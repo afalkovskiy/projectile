@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 #from scipy.signal import hilbert, chirp
 import math
-st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
 padding_top = 0
 st.markdown(f"""
     <style>
