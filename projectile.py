@@ -66,9 +66,10 @@ ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
 
 
-ax.plot(x,y)
+ax.plot(x, y, linestyle='dashed')
 plt.xlabel("X (m)")
 plt.ylabel("Y (m)")
+plt.grid(True)
 st.pyplot(fig)
 
 
