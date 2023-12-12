@@ -73,7 +73,7 @@ plt.grid(True)
 st.pyplot(fig)
 
 
-chart_data = pd.DataFrame(
-   { "x(m)": x, "y": y}
-)
-st.line_chart(chart_data, x="x(m)", y="y")
+# chart_data = pd.DataFrame(
+#    { "x(m)": x, "y": y}
+# )
+# st.line_chart(chart_data, x="x(m)", y="y")
