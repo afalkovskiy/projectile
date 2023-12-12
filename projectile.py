@@ -32,9 +32,17 @@ with col2:
     alpha_rad = pi * alpha / 180.
     st.write("alpha_rad = ", alpha_rad)
 
-st.subheader("Vx = V * Cos(alpha) = ")
+t1 = vy/g
+t2 = 2*vv
+d = vx*t2
+h = vy*t1 - 0.5*g*t1**2
+st.subheader("Time = "+str(round(t2,1))
 
 x, y = projectile(v, alpha_rad)
+
+
+
+
 
 chart_data = pd.DataFrame(
    {
