@@ -49,7 +49,7 @@ st.subheader(txt1)
 
 chart_data = pd.DataFrame(
    {
-       "x (m)": x,
+       "x(m)": x,
        "y": y
    }
 )
