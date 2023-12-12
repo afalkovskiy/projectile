@@ -5,6 +5,15 @@ import numpy as np
 #from scipy.signal import hilbert, chirp
 import math
 
+st.markdown("""
+    <style>
+    [data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
+        gap: 0rem;
+    }
+    </style>
+    """,unsafe_allow_html=True)
+
+
 pi = math.pi
 g = 9.81
 
