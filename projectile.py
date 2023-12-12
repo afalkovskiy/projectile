@@ -39,7 +39,7 @@ with col2:
 
 
 x, y, t2, d, h = projectile(v, alpha_rad)
-txt1 = "Time = " + str(round(t2,1)) + " sec; Distance = " + str(round(d,1)) + " m; Hight = " + str(round(n,1)) +" m"
+txt1 = "Time = " + str(round(t2,1)) + " sec; Distance = " + str(round(d,1)) + " m; Hight = " + str(round(h,1)) +" m"
 st.subheader(txt1)
 
 
