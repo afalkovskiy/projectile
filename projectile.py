@@ -36,7 +36,8 @@ t1 = vy/g
 t2 = 2*vv
 d = vx*t2
 h = vy*t1 - 0.5*g*t1**2
-st.subheader("Time = "+str(round(t2,1))
+txt1 = "Time = " + str(round(t2,1))
+st.subheader(txt1)
 
 x, y = projectile(v, alpha_rad)
 
